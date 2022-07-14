@@ -2,12 +2,13 @@ import React from 'react'
 import  { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-
+import { useDispatch } from "react-redux";
+import { adddata } from "../../Redux/action";
 const SearchBar = () => {
     var apikey =`5039632cb832ec1ad066b935929e983a`;
     const [currentCity, setCurrentCity] = useState("");
     const [coordinates, setCoordinates] = useState({});
-
+    const dispatch=useDispatch()
 
 
     useEffect(()=>{
@@ -60,6 +61,7 @@ const SearchBar = () => {
   .then(({data})=>
   {
     console.log(data)
+    dispatch(adddata(data.daily))
     
     
   })

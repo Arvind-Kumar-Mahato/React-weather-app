@@ -1,4 +1,5 @@
 .boxscroll{
+    margin-top: 10px;
     width: 650px;
     height:200px;  
     margin-left: 70px;
@@ -9,4 +10,17 @@
     padding: 3rem;
     box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 45px;
 
+}
+
+.boxscroll2{
+    font-size: 15px; 
+    font-weight:bold;
+}
+.boxscroll1{
+    width: 700px;
+    padding: 0 2rem;
+}
+.boxscroll1:hover{
+    border: 3px solid blue;
+    height:200px;
 }
