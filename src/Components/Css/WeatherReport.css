@@ -1,0 +1,12 @@
+.boxscroll{
+    width: 650px;
+    height:200px;  
+    margin-left: 70px;
+    overflow-x: scroll;
+    gap: 1rem;
+    display: flex;
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 45px;
+
+}
