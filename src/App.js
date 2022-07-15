@@ -3,6 +3,7 @@ import './App.css';
 import SearchBar from './Components/UI/SearchBar';
 import "./Components/Css/SearchBar.css"
 import WeatherReport from './Components/UI/WeatherReport';
+import WeatherGraph from './Components/UI/WeatherGraph';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
    <SearchBar/>
    <WeatherReport/>
+   <WeatherGraph/>
     </div>
     </div>
   );
