@@ -1,0 +1,12 @@
+.boxtemp{
+    width:710px;
+    padding:5rem;
+    
+}
+
+.boxtemp1{
+    font-size: 45px; 
+    font-weight:bold;
+    align-items: center;
+    display: flex;
+}
