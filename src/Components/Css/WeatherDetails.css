@@ -1,0 +1,47 @@
+.main_details{
+    color: black;
+    padding: 10px 25px;
+}
+
+.humandPre {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+}
+
+.humid{
+    background-color: rgba(194, 253, 255, 0.887);
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.pressure{
+    background-color: rgba(194, 253, 255, 0.887);
+    padding: 15px 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.riseAndset{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.rise h4{
+    font-size: 18px;
+}
+.rise p{
+    font-size: 12px;
+}
+
+.set h4{
+    font-size: 18px;
+}
+.set p{
+    font-size: 12px;
+}
+.boxgraph{
+    margin-left: 60px;
+}
