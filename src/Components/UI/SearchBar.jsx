@@ -60,7 +60,7 @@ const SearchBar = () => {
       https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${"dfbfa90f298297bd32d78348f443a400"}`)
   .then(({data})=>
   {
-    console.log(data)
+    // console.log(data)
     dispatch(adddata(data.daily))
     
     

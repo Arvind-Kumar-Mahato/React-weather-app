@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { addtemp, daytemp, sunrise } from "../../Redux/action"
 const WeatherReport = () => {
   const data = useSelector((store) => store.data);
-  console.log(data);
+  // console.log(data);
   const dispatch = useDispatch();
   return (
     <div className = "boxscroll">
