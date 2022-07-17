@@ -28,8 +28,8 @@ const WeatherGraph = () => {
     <div  className='boxtemp'>
     
     <div className='boxtemp1'>
-   
-    {temp && <p>{Math.round(temp[0] - 273)}°C</p>}
+  {/* { console.log("rt",temp[0])} */}
+    {temp && <p>{Math.round(temp[0])}°C</p>}
        
     {temp && <img
                 style={{

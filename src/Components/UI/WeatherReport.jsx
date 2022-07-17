@@ -44,8 +44,8 @@ const WeatherReport = () => {
             }}>
             <p className="boxscroll2">{din}</p>
               <p>
-                <span className="boxscroll2">{Math.round(e.temp.max - 273)}° </span>
-                {Math.round(e.temp.min - 273)}°
+                <span className="boxscroll2">{Math.round(e.temp.max)}° </span>
+                {Math.round(e.temp.min)}°
               </p>
               <img
                 style={{

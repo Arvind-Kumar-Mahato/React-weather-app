@@ -23,7 +23,7 @@ const SearchBar = () => {
   
             axios
               .get(
-                `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.lat}&lon=${coordinates.lng}&appid=${apikey}`
+                `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.lat}&lon=${coordinates.lng}&appid=${apikey}&units=metric`
               )
               .then(({ data }) => {
                 setCurrentCity(data.name);
@@ -44,7 +44,7 @@ const SearchBar = () => {
   
     function handleButtonClick() {
       
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apikey}`)
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apikey}&units=metric`)
       .then(({data})=>{
          
       let lat=data.coord.lat;
@@ -57,10 +57,10 @@ const SearchBar = () => {
   
     function datas(lat, lon){
       axios.get(`
-      https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${"dfbfa90f298297bd32d78348f443a400"}`)
+      https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${"dfbfa90f298297bd32d78348f443a400"}&units=metric`)
   .then(({data})=>
   {
-    // console.log(data)
+     console.log("h",data.daily)
     dispatch(adddata(data.daily))
     
     
