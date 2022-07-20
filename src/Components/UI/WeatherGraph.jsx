@@ -1,5 +1,4 @@
-import React,{Component} from 'react'
-import { useEffect } from 'react';
+import React,{Component} from 'react';
 import { useSelector } from 'react-redux';
 import "../Css/WeatherGraph.css";
 import Chart from "react-apexcharts";
@@ -17,9 +16,7 @@ const WeatherGraph = () => {
    
 
 
-    useEffect(()=>{
     
-    },[data])
     
     const Graph=()=>{
         return <><Charts temp={data}/></>
