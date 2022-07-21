@@ -14,7 +14,31 @@ const WeatherReport = () => {
           let day = new Date(timeZ * 1000);
           var options = { weekday: "long" };
           const din = new Intl.DateTimeFormat("en-US", options).format(day);
+          
 
+          let arr = [
+                `${e.temp.morn}°C`,
+                `${e.temp.day}°C`,
+                `${e.temp.eve}°C`,
+                `${e.temp.night}°C`,
+      ];     
+
+      let daytem=[
+         e.temp.day,
+         e.weather[0].main
+              
+      ]  
+
+      let sun=[
+        e.pressure,
+        e.humidity,
+        e.sunrise,
+        e.sunset,
+
+      ]
+      dispatch(addtemp(arr))
+      dispatch(daytemp(daytem))
+      dispatch(sunrise(sun))
           return (
             <div className="boxscroll1" onClick={()=>{
              let arr = [
