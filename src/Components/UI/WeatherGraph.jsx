@@ -87,13 +87,13 @@ class Charts extends Component {
   
     render() {
       return (
-        <div style={{ width: "100%" }}>
+        <div style={{ width: "80%" }}>
           <Chart
             options={this.state.options}
             series={this.state.series}
             type="area"
-            width="100%"
-            height="300px"
+            width="90%"
+            height="200px"
           />
         </div>
       );

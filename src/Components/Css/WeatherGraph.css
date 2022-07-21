@@ -1,7 +1,7 @@
 .boxtemp{
     width:710px;
-    padding:5rem;
-    
+    padding:3rem;
+    margin-left: 1rem;
 }
 
 .boxtemp1{
@@ -9,5 +9,6 @@
     font-weight:bold;
     align-items: center;
     display: flex;
+    gap: 20px;
 }
 

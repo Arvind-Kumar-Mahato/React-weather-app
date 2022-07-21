@@ -58,7 +58,7 @@ const WeatherDetails = () => {
             </div>
 
             <div className='boxgraph'>
-                <img src = {graph} alt = ""/>
+                <img  className = 'img'src = {graph} alt = ""/>
             </div>
     </div>
   )
