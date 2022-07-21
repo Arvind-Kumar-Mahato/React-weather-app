@@ -66,15 +66,16 @@ const WeatherReport = () => {
               dispatch(addtemp(arr))
 
             }}>
+            
             <p className="boxscroll2">{din}</p>
               <p>
-                <span className="boxscroll2">{Math.round(e.temp.max)}° </span>
-                {Math.round(e.temp.min)}°
+                <span className="boxscroll3">{Math.round(e.temp.max)}° </span>
+              <span>  {Math.round(e.temp.min)}°</span>
               </p>
               <img
                 style={{
-                  height: " 30px",
-                  width: "50px",
+                  height: "20px",
+                  width:"30px",
                 }}
                 src={
                   e.weather[0].main === "Clear"
@@ -85,8 +86,11 @@ const WeatherReport = () => {
                 }
               alt =""/>
               <p>{e.weather[0].main}</p>
+
+            
             </div>
           );
+          
         })}
 
     </div>

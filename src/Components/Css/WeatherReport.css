@@ -1,25 +1,43 @@
 .boxscroll{
+    /* border: 1px solid red; */
     
-    width: 530px;
-    height:150px;  
-    overflow-x: scroll;
-    gap: 1rem;
-    display: flex;
-    border-radius: 1rem;
-    padding: 3rem;
-    box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 45px;
+    width: 350px;
+    height:160px;  
+    overflow: scroll;
 
+    display: flex;
+    column-gap: 10px;
+    font-size: 14px; 
+    box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 45px;
+    margin: auto;
+   margin-bottom: 10px;
 }
 
-.boxscroll2{
-    font-size: 15px; 
+.boxscroll3{
+    font-size: 14px; 
     font-weight:bold;
+  
 }
 .boxscroll1{
-    width: 300px;
-    padding: 0 2rem;
+    width: 200px;
+    font-size: 14px; 
+    height: 160px;
+    /* border: 1px solid brown; */
 }
 .boxscroll1:hover{
     border: 3px solid blue;
-    height:200px;
+    height:140px;
+   background-color: aqua;
+    
+}
+
+.singleDiv{
+    border: 1px solid pink;
+}
+
+.boxscroll2{
+    width: 75px;
+    
+    
+    
 }

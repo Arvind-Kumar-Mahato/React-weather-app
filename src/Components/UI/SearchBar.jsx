@@ -77,9 +77,10 @@ const SearchBar = () => {
       <div className="location_img">
         <img src="https://as2.ftcdn.net/v2/jpg/02/72/89/67/1000_F_272896745_tlTivOH81qWIVzz34KqFGm8LO3N9hMYQ.jpg" alt = "" className="location" />
       </div>
-      <div className="input_box">
-        <input
-          className="input"
+      <div className="input">
+        <input 
+        className='input-box'
+          
           value={currentCity}
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}

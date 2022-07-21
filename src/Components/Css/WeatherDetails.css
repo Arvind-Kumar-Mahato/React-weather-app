@@ -1,10 +1,15 @@
 .main_details{
     color: black;
     padding: 2px 10px;
+    width: 330px;
+    margin: auto;
+    /* border:1px solid teal; */
 }
 
 .humandPre {
-    display: grid;
+    /* border: 1px solid khaki; */
+   height:80px;
+    display: flex;
     grid-template-columns: 50% 50%;
     gap: 5px;
     
@@ -12,42 +17,52 @@
 
 .humid{
     background-color: rgba(194, 253, 255, 0.887);
-    padding: 10px 10px;
+   /* border: 1px solid red; */
+  width: 170px;
     text-align: left;
-    font-size: 18px;
-    height: 100px;
+    font-size: 13px;
+    height: 80px;
 }
 
 .pressure{
     background-color: rgba(194, 253, 255, 0.887);
-    padding: 15px 10px;
+    /* border: 1px solid red; */
+    width: 170px;
+    height: 80px;
     text-align: left;
-    font-size: 18px;
-    height: 90px;
+    font-size: 13px;
+   
 }
 
 .riseAndset{
+    /* border: 1px solid palevioletred; */
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    
 }
 
 .rise h4{
-    font-size: 18px;
+    /* border: 1px solid orangered; */
+    font-size: 13px;
 }
 .rise p{
+    /* border: 1px solid orangered; */
     font-size: 12px;
 }
 
 .set h4{
-    font-size: 18px;
+    /* border: 1px solid orangered; */
+    font-size: 13px;
 }
 .set p{
+    /* border: 1px solid orangered; */
     font-size: 12px;
 }
 .boxgraph{
- margin-left: 20px;
+ /* border: 1px solid black; */
+  margin: auto;
+  width: 350px;
 }
 .img{
-    width: 600px;
+   width: 350px;
 }

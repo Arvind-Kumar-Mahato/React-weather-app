@@ -3,9 +3,13 @@
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 45px;
   margin-left:21rem;
-  max-width:40rem;
-  height:75rem
- 
+  max-width:400px;
+  margin: auto;
+  height:700px;
+ background-color: white;
+}
+.container{
+  background-color: rgba(105, 223, 231, 0.887)
 }
 
 

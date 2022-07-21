@@ -32,7 +32,7 @@ const WeatherGraph = () => {
                 style={{
             
                  
-                  width: "150px",
+                  width: "35px",
                 }}
 
 
@@ -87,13 +87,13 @@ class Charts extends Component {
   
     render() {
       return (
-        <div style={{ width: "80%" }}>
+        <div style={{ width: "100%" }}>
           <Chart
             options={this.state.options}
             series={this.state.series}
             type="area"
-            width="90%"
-            height="200px"
+            width="100%"
+            height="150px"
           />
         </div>
       );
