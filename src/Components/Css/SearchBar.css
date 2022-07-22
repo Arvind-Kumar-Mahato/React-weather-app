@@ -43,3 +43,33 @@
     top: 28px;
     margin-left: -23px;
   }
+
+
+
+
+  .suggestions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #d4d4d4;
+    background-color: #f7f7f7;
+    border-radius: 0 0 10px 10px;
+    height: 300px;
+    overflow: scroll;
+    position:absolute;
+    z-index: 2;
+  }
+
+  .suggestions li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .Search li:hover {
+    background-color: #d4d4d4;
+  } 

@@ -1,14 +1,55 @@
 import React from 'react'
-import  { useState } from "react";
+import  { useState,useRef  } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { adddata } from "../../Redux/action";
-const SearchBar = () => {
+const SearchBar = ({ options = ["Oranges", "Apples", "Pearls"] }) => {
     var apikey =`5039632cb832ec1ad066b935929e983a`;
     const [currentCity, setCurrentCity] = useState("");
     const [coordinates, setCoordinates] = useState({});
     const dispatch=useDispatch()
+    
+    //
+    const [value, setValue] = useState("");
+    const [showSuggestions, setShowSuggestions] = useState(false);
+    const suggestions = options.filter(option => option.toLowerCase().includes(value.toLowerCase()))
+
+    const autocompleteRef = useRef();
+
+
+    useEffect(() => {
+      const handleClick = (event) => {
+          if (autocompleteRef.current && !autocompleteRef.current.contains(event.target)) {
+              setShowSuggestions(false)
+          }
+      };
+      document.addEventListener("click", handleClick);
+        return () => {
+            document.removeEventListener("click", handleClick)
+        }
+    }, [])
+
+
+  
+
+  const handleSuggestionClick = (suggetion) => {
+    setValue(suggetion);
+   
+    setCurrentCity(suggetion);
+    setShowSuggestions(false);
+}
+
+    //
+
+
+
+
+
+
+
+
+
 
 
     useEffect(()=>{
@@ -39,6 +80,7 @@ const SearchBar = () => {
   
     function handleInputChange(event) {
       setCurrentCity(event.target.value);
+      setValue(event.target.value);
     }
   
   
@@ -73,7 +115,7 @@ const SearchBar = () => {
       if (e.key === "Enter") handleButtonClick();
     }
   return (
-    <div className="Search">
+    <div className="Search" ref={autocompleteRef} >
       <div className="location_img">
         <img src="https://as2.ftcdn.net/v2/jpg/02/72/89/67/1000_F_272896745_tlTivOH81qWIVzz34KqFGm8LO3N9hMYQ.jpg" alt = "" className="location" />
       </div>
@@ -85,7 +127,23 @@ const SearchBar = () => {
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}
           placeholder = "Search for City"
+          onFocus={() => setShowSuggestions(true)}
+         
         />
+
+{showSuggestions && (
+                <ul className="suggestions">
+                    {suggestions.map(suggestion => (
+                        <li onClick={() => handleSuggestionClick(suggestion)} key={suggestion}>
+                            {suggestion}
+                        </li>
+                    ))}
+                </ul>
+            )}
+
+
+
+
       </div>
       <div className="search_img">
         <img
